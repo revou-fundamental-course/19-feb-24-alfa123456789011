@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebTesting</title>
+    <link rel="stylesheet" href="css/style.css">
+    <Script src="js/script.js"></Script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <img src="asset/mylogo3.png" alt="logo" width="80px" height="55px" style="border-radius: 50%;">
+            <div class="Home">Home</div>
+            <div class="Search">Search</div>
+            <div class="Logout">Logout</div>
+        </nav>
+        <form class="nama1" name="message-form" onsubmit="return validationform()">
+            <input type="text" placeholder="your name" id="name-input" name="name-input">
+            <button id="submit" type="submit">kirim</button>
+            <p class="error1" id="error-name"></p>
+        </form>
+
+        <h1 class="Welcome">Hello <span id="name">Alfa</span>, welcome</h1>        
+
+        <script src="js/script.js"></script>
+        <p class="Explore">Explore to your heart content</p>
+        <div>
+            <div>
+                <h1 class="top">HELLO</h1>
+            </div>
+            <div class="lingkar">
+                <div><h3 class="topm">Top Member</h3></div>
+                <div class="topg">
+                    <div class="gambara"><img src="asset/alexander1.jpg" alt="gambar1" width="200px" height="200px" style="border-radius: 50%;"></div>                    
+                    <div class="gambarb"><img src="asset/knightsofroundtable.webp" alt="gambar2"  width="200px" height="200px" style="border-radius: 50%;"></div>                    
+                    <div class="gambarc"><img src="asset/chandra-sekhar-poudyal-karn.jpg" alt="gambar3"  width="200px" height="200px" style="border-radius: 50%;"></div>
+                </div>
+                <div class="lingname">
+                    <p class="l1">Alexander</p>
+                    <p class="l2">Merlin</p>
+                    <p class="l3">Karna</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <br>
+
+    <main style="flex-direction: row;display: flex;">
+        <div class="formbox">
+            <form action="action_page.php" method="POST">
+                <div class="title">Registration</div>
+
+                <div>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
+                </div>
+        
+                <br>
+        
+                <div>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Squarepants" required>
+                </div>
+        
+                <br>
+        
+                <div>
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="pass" maxlength="12" required>
+                </div>
+        
+                <br>
+        
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="SPants@gmail.com">
+                </div>
+        
+                <br>
+        
+                <div>
+                    <label for="phone">Phone :</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890">
+                </div>
+        
+                <br>
+        
+                <div>
+                    <label for="bdate">Birthdate:</label>
+                    <input type="date" id="bdate" name="bdate">
+                </div>
+                
+                <br>
+        
+                <div>
+                    <label for="title">title:</label>
+        
+                    <label for="Mr.">Mr.</label>
+                    <input type="radio" id="Mr." name="title" value="Mr.">
+        
+                    <label for="Mrs.">Mrs.</label>
+                    <input type="radio" id="Mrs." name="title" value="Mrs.">            
+                </div>
+                
+                <br>
+        
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <div>
+                    <input type="reset">
+                    </div>
+        
+                    <div style="margin: 10px;">
+                    <input type="submit">
+                    </div>
+                </div>
+        
+            </form>
+
+          
+        </div>
+        <div class="tablebox">
+            
+            <table style="align-content: center; align-items: center;">
+                <tr>
+                  <th style="background-color:rgb(195, 195, 197); width: 200px;">Name</th>
+                  <th style="background-color:rgb(195, 195, 197); width: 200px;">ID</th>
+                  <th style="background-color:rgb(195, 195, 197); width: 200px;">Status</th>
+                </tr>
+                <tr>
+                  <td style="background-color:rgb(246, 246, 248)">Arthuria Pendragon</td>
+                  <td style="background-color:rgb(249, 249, 252)">Saber01</td>
+                  <td style="background-color:rgb(243, 243, 245)">Active</td>
+                </tr>
+                <tr>
+                  <td style="background-color:rgb(246, 246, 248)">Alexander</td>
+                  <td style="background-color:rgb(246, 246, 248)">Rider01</td>
+                  <td style="background-color:rgb(246, 246, 248)">Active</td>
+                </tr>
+                <tr>
+                    <td style="background-color:rgb(246, 246, 248)">Lancelot</td>
+                    <td style="background-color:rgb(249, 249, 252)">Saber02</td>
+                    <td style="background-color:rgb(243, 243, 245)">Active</td>
+                </tr>
+                <tr>
+                    <td style="background-color:rgb(246, 246, 248)">Merlin</td>
+                    <td style="background-color:rgb(246, 246, 248)">Caster01</td>
+                    <td style="background-color:rgb(246, 246, 248)">Active</td>
+                </tr>
+                <tr>
+                    <td style="background-color:rgb(246, 246, 248)">Karna</td>
+                    <td style="background-color:rgb(246, 246, 248)">Lancer01</td>
+                    <td style="background-color:rgb(246, 246, 248)">Active</td>
+                </tr>
+              </table>
+        </div>
+    </main>
+    <footer>
+        <h4 class="credit">Created by Alfathony</h4>
+    </footer>
+    
+</body>
+</html>

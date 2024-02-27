@@ -1,0 +1,54 @@
+table, th, td {border: 1px solid black; padding: 10px; 
+    width: 500px; height: 20px;}
+table {border-collapse: collapse;}
+nav {border: 2px solid rgb(247, 248, 248); display: flex; align-items: center; justify-content: flex-end; 
+    flex-direction: row; background-color: rgb(32, 30, 30);
+}
+.Home, .Search, .Logout {color: rgb(12, 12, 12); background-color: rgb(250, 250, 252); padding: 8px; margin: 5px; 
+    align-self: center; justify-self: flex-end; font-weight: bolder; margin-right: 30px;
+    border-radius: 10%;
+}
+img {margin-right: auto;}
+body {background-color: rgb(77, 78, 77); font-family: Arial, Helvetica, sans-serif;              
+}
+main {display: flex; flex: 1; align-content: center; 
+    justify-content: space-around;
+    border: 1px solid white;
+}
+.nama1 {margin-top: 20px;} 
+.error1 {color: white;}
+.formbox {border: 1px solid black; background-color: white; 
+    padding: 10px; display: flex; flex-wrap: wrap; 
+    border-radius: 5px; margin-top: 60px; margin-bottom: 40px;
+}
+.tablebox {margin-top: 60px;}
+.title {margin-bottom: 10px; font-size: 25px;}
+.Welcome {margin-left: 10px; color: white;}
+.Explore {margin-left: 10px; color: white;}
+.top {display: flex; align-content: center; justify-content: center;
+    color: white; border: 1px solid white; height: 150px;
+    padding: 100px;
+}
+.lingkar {border: 1px solid white; padding: 5px;}
+.topm {color: white; margin: 30px;}
+.topg {color: white; display: flex; flex-direction: row;
+    justify-content: flex-start; margin: 20px; flex-wrap: wrap;
+}
+.gambara {border: 1px solid white; width: 200px; text-align: center;
+    height: 200px; border-radius: 50%;
+}
+.gambarb {border: 1px solid white; width: 200px; text-align: center;
+    height: 200px; border-radius: 50%; margin-left: 40px;
+}
+.gambarc {border: 1px solid white; width: 200px; text-align: center;
+    height: 200px; border-radius: 50%; margin-left: 40px;
+}
+.lingname {color: white; display: flex; flex-direction: row;
+    justify-content: flex-start; margin-left: 80px;
+}
+.l2 {margin-left: 190px;}
+.l3 {margin-left: 190px;}
+footer {border: 1px solid white; padding: 5px; margin-top: 10px;}
+.credit {margin-right: 15px; color: white; display: flex; 
+    justify-content: flex-end; padding: 5px;
+}
