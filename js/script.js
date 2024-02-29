@@ -35,3 +35,4 @@ function showSlide(n) {
 }
 
 const slideInterval = setInterval(() => nextSlide(1), 2000);
+
