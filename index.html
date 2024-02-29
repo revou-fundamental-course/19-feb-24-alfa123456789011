@@ -34,16 +34,21 @@
                 <img class="header-img" src="asset/bg3.jpg" alt="header">
             </div>
             <div class="lingkar">
-                <div><h3 class="topm">Top Selling Product</h3></div>
+                <legend class="topm">Top Selling Product</legend>
                 <div class="topg">
-                    <div class="gambara"><img src="asset/s5.jpg" alt="gambar1" width="200px" height="200px" style="border-radius: 50%;"></div>                    
-                    <div class="gambarb"><img src="asset/s6.jpg" alt="gambar2"  width="200px" height="200px" style="border-radius: 50%;"></div>                    
-                    <div class="gambarc"><img src="asset/s4.jpg" alt="gambar3"  width="200px" height="200px" style="border-radius: 50%;"></div>
-                </div>
-                <div class="lingname">
-                    <p class="l1">Gray Fur</p>
-                    <p class="l2">White Rect</p>
-                    <p class="l3">Blue Dolp</p>
+                    <div class="lingkar-dalam">
+                        <div class="gambara"><img src="asset/s5.jpg" alt="gambar1" width="200px" height="200px" style="border-radius: 50%;"></div>
+                        <p class="l1">Gray Fur</p>
+                    </div>
+                    <div class="lingkar-dalam">
+                        <div class="gambarb"><img src="asset/s6.jpg" alt="gambar2" width="200px" height="200px" style="border-radius: 50%;"></div>
+                        <p class="l2">White Rect</p>
+                    </div>
+                    <div class="lingkar-dalam">
+                        <div class="gambarc"><img src="asset/s4.jpg" alt="gambar3" width="200px" height="200px" style="border-radius: 50%;"></div>
+                        <p class="l3">Blue Dolp</p>
+                    </div>                                        
+                    
                 </div>
             </div>
         </div>
@@ -52,11 +57,9 @@
     <br>
 
     <main>
-
-        <div class="formbox">
-            <form action="action_page.php" method="POST">
+        <form class="message-us-form" name="message-us-form">
+            <div class="formbox">            
                 <div class="message-us">Messege Us</div>
-
                 <div>
                     <label for="fname">First name:</label>
                     <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
@@ -72,32 +75,6 @@
                 <br>
             
                 <div>
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" placeholder="SPants@gmail.com">
-                </div>
-
-                <br>
-        
-                <div>
-                    <label for="bdate">Birthdate :</label>
-                    <input type="date" id="bdate" name="bdate">
-                </div>
-                
-                <br>
-                        
-                <div>
-                    <label for="Gender">Gender</label>
-        
-                    <label for="Mr.">Male</label>
-                    <input type="radio" id="Male" name="Gender" value="Male">
-        
-                    <label for="Mrs.">Female</label>
-                    <input type="radio" id="Female" name="Gender" value="Female">            
-                </div>
-
-                <br>
-            
-                <div>
                     <label for="Message">Messege :</label>
                     <input type="email" id="Message" name="Message" placeholder="Text Us">
                 </div>
@@ -107,35 +84,27 @@
         
                 <div style="display: flex; flex-direction: row; align-items: center;">
                     <div>
-                    <input type="reset">
+                    <button type="reset">Reset</button>
                     </div>
         
                     <div style="margin: 10px;">
-                    <input type="submit">
+                    <button type="submit" id="send-message-us-form">Send</button>
                     </div>
                 </div>
         
-            </form>
+            </div>
 
-          
-        </div>
-
-        <div class="resultbox">
-
-            <b>Current Time :</b>
-            <span id="current-time"></span>
-            <b>Full Name :</b>
-            <span id="full-name"></span>
-            <b>Email :</b>
-            <span id="result-email"></span>
-            <b>Birthdate :</b>
-            <span id="result-birthdate"></span>
-            <b>Gender :</b>
-            <span id="result-gender"></span>
-            <b>Message :</b>
-            <span id="result-message"></span>
-
-        </div>
+            <div class="resultbox">            
+                <b>Current Time :</b>
+                <span id="current-time"></span>
+                <b>Full Name :</b>
+                <span id="full-name"></span>
+                <b>Message :</b>
+                <span id="result-message"></span>         
+            </div>
+        </form>
+    
+        <script src="js/script.js"></script>
     </main>
     <footer>
         <h4 class="credit">Created by Alfathony</h4>

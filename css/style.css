@@ -9,18 +9,24 @@ nav {border: 1px solid rgb(12, 12, 12); display: flex; align-items: center; just
 img {margin-right: auto;}
 body {background-color: rgb(248, 252, 248); font-family: Arial, Helvetica, sans-serif;              
 }
+.nama1 {margin-top: 20px;} 
+.error1 {color: rgb(5, 5, 5);}
 .slide-img {margin-top: 40px;
 
 }
 .header-img {width: 90%; display: block; margin: auto;
 
 }
+
 main {display: flex; flex: 1; align-content: center; 
     justify-content: space-between; margin-top: 40px;
     border: 1px solid white;
 }
-.nama1 {margin-top: 20px;} 
-.error1 {color: rgb(5, 5, 5);}
+
+.message-us-form {
+    color: rgb(15, 15, 15); display: flex; flex: 1; align-content: center; 
+    justify-content: space-between; margin-top: 40px;
+}
 .formbox {border: 1px solid black; background-color: white; 
     padding: 10px; display: flex; flex-wrap: wrap; 
     border-radius: 5px; margin-top: 60px; margin-bottom: 40px;
@@ -33,26 +39,28 @@ main {display: flex; flex: 1; align-content: center;
     color: rgb(12, 12, 12); border: 1px solid white; height: 150px;
     padding: 100px;
 }
-.lingkar {border: 1px solid white; padding: 5px;}
-.topm {color: rgb(15, 15, 15); margin: 30px;}
-.topg {color: rgb(14, 13, 13); display: flex; flex-direction: row;
-    justify-content: flex-start; margin: 20px; flex-wrap: wrap;
-}
-.gambara {border: 1px solid white; width: 200px; text-align: center;
-    height: 200px; border-radius: 50%;
-}
-.gambarb {border: 1px solid white; width: 200px; text-align: center;
-    height: 200px; border-radius: 50%; margin-left: 40px;
-}
-.gambarc {border: 1px solid white; width: 200px; text-align: center;
-    height: 200px; border-radius: 50%; margin-left: 40px;
-}
-.lingname {color: rgb(15, 15, 15); display: flex; flex-direction: row;
-    justify-content: flex-start; margin-left: 80px;
-}
-.l2 {margin-left: 190px;}
-.l3 {margin-left: 190px;}
 
+.lingkar {border: 1px solid white; padding: 5px;}
+.topm {color: rgb(15, 15, 15); margin: 30px; font-weight: bolder; font-size: 25px;}
+.topg {
+    color: rgb(14, 13, 13); display: flex; flex-direction: row;
+}
+
+.gambara, .gambarb, .gambarc {
+    border: 1px solid rgb(247, 248, 243); border-radius: 50%;
+}
+.lingkar-dalam {
+    color: rgb(19, 18, 18); flex: 1;
+    text-align: center;
+    margin: 0 10px;
+}
+.lingkar-dalam img {
+    max-width: 100%;
+}
+
+.lingkar-dalam p {
+    margin-top: 10px;
+}
 .formbox {
     width: 300px;
     margin: 0 auto;
@@ -93,6 +101,7 @@ main {display: flex; flex: 1; align-content: center;
 .formbox input[type="submit"]:hover {
     background-color: #0056b3;
 }
+.message-us {font-size: 25px; margin-bottom: 15px;}
 
 .resultbox {
     width: 500px;
@@ -144,4 +153,48 @@ main {display: flex; flex: 1; align-content: center;
 footer {border: 1px solid white; padding: 5px; margin-top: 10px;}
 .credit {margin-right: 15px; color: rgb(2, 2, 2); display: flex; 
     justify-content: flex-end; padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {display: flex; flex-direction: column;
+        justify-content: center;
+    }
+    .Home, .Profile, .Message {
+        margin-right: 10px; margin-top: 10px;
+    }
+    .formbox, .resultbox {
+        width: 90%;
+        margin: 0 auto; /
+    }
+    .lingname {
+        margin-left: 0;
+    }
+    .gambarb, .gambarc {
+        margin-left: 0;
+    }
+    .formbox input[type="submit"], .resultbox input[type="submit"] {
+        width: 100%;
+    }
+    .message-us-form {
+        color: rgb(15, 15, 15); display: flex; flex-direction: column; align-content: space-between; 
+        justify-content: space-between; margin-top: 40px;
+    }
+    .resultbox{
+        margin-top: 20px;
+    }
+    .topg {
+        display: flex; flex-direction: column;
+    }
+    .lingkar-dalam {
+        color: rgb(19, 18, 18); flex-direction: column;
+        text-align: center;
+        margin: 0 10px;
+    }
+    .lingkar-dalam img {
+        max-width: 100%;
+    }
+    
+    .lingkar-dalam p {
+        margin-top: 10px;
+    }
 }
