@@ -57,7 +57,7 @@ main {display: flex; flex: 1; align-content: center;
     display: flex;
     animation: slide 10s infinite;
 }
-/* @keyframes slide {
+@keyframes slide {
     0%{
         transform: translateX(0);
     }
@@ -82,7 +82,7 @@ main {display: flex; flex: 1; align-content: center;
     100%{
         transform: translateX(-300%);
     }
-} */
+}
 .lingkar {border: 1px solid white; padding: 5px; margin-top: 500px;}
 .topm {color: rgb(15, 15, 15); margin: 30px; font-weight: bolder; font-size: 25px;}
 .topg {
