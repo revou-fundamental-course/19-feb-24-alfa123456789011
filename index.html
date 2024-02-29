@@ -10,10 +10,10 @@
 <body>
     <header>
         <nav class="container">
-            <img src="asset/mylogo3.png" alt="logo" width="80px" height="55px" style="border-radius: 50%;">
+            <img class="logo" src="asset/mylogoh1.png" alt="logo" width="140px" height="55px">
             <div class="Home">Home</div>
-            <div class="Search">Search</div>
-            <div class="Logout">Logout</div>
+            <div class="Profile">Profile</div>
+            <div class="Messege">Messege</div>
         </nav>
         <form class="nama1" name="message-form" onsubmit="return validationform()">
             <input type="text" placeholder="your name" id="name-input" name="name-input">
@@ -21,25 +21,29 @@
             <p class="error1" id="error-name"></p>
         </form>
 
-        <h1 class="Welcome">Hello <span id="name">Alfa</span>, welcome</h1>        
+        <h1 class="Welcome">Hello <span id="name">Alfa</span>, welcome to our store</h1>        
 
         <script src="js/script.js"></script>
+        
         <p class="Explore">Explore to your heart content</p>
+        
         <div>
-            <div>
-                <h1 class="top">HELLO</h1>
+            <div class="slide-img">
+                <img class="header-img" src="asset/bg1.jpg" alt="header">
+                <img class="header-img" src="asset/bg2.jpg" alt="header">
+                <img class="header-img" src="asset/bg3.jpg" alt="header">
             </div>
             <div class="lingkar">
-                <div><h3 class="topm">Top Member</h3></div>
+                <div><h3 class="topm">Top Selling Product</h3></div>
                 <div class="topg">
-                    <div class="gambara"><img src="asset/alexander1.jpg" alt="gambar1" width="200px" height="200px" style="border-radius: 50%;"></div>                    
-                    <div class="gambarb"><img src="asset/knightsofroundtable.webp" alt="gambar2"  width="200px" height="200px" style="border-radius: 50%;"></div>                    
-                    <div class="gambarc"><img src="asset/chandra-sekhar-poudyal-karn.jpg" alt="gambar3"  width="200px" height="200px" style="border-radius: 50%;"></div>
+                    <div class="gambara"><img src="asset/s5.jpg" alt="gambar1" width="200px" height="200px" style="border-radius: 50%;"></div>                    
+                    <div class="gambarb"><img src="asset/s6.jpg" alt="gambar2"  width="200px" height="200px" style="border-radius: 50%;"></div>                    
+                    <div class="gambarc"><img src="asset/s4.jpg" alt="gambar3"  width="200px" height="200px" style="border-radius: 50%;"></div>
                 </div>
                 <div class="lingname">
-                    <p class="l1">Alexander</p>
-                    <p class="l2">Merlin</p>
-                    <p class="l3">Karna</p>
+                    <p class="l1">Gray Fur</p>
+                    <p class="l2">White Rect</p>
+                    <p class="l3">Blue Dolp</p>
                 </div>
             </div>
         </div>
@@ -47,10 +51,11 @@
 
     <br>
 
-    <main style="flex-direction: row;display: flex;">
+    <main>
+
         <div class="formbox">
             <form action="action_page.php" method="POST">
-                <div class="title">Registration</div>
+                <div class="message-us">Messege Us</div>
 
                 <div>
                     <label for="fname">First name:</label>
@@ -63,48 +68,42 @@
                     <label for="lname">Last name:</label>
                     <input type="text" id="lname" name="lname" placeholder="Squarepants" required>
                 </div>
-        
+
                 <br>
-        
+            
                 <div>
-                    <label for="pass">Password:</label>
-                    <input type="password" id="pass" name="pass" maxlength="12" required>
-                </div>
-        
-                <br>
-        
-                <div>
-                    <label for="email">Email:</label>
+                    <label for="email">Email :</label>
                     <input type="email" id="email" name="email" placeholder="SPants@gmail.com">
                 </div>
-        
+
                 <br>
         
                 <div>
-                    <label for="phone">Phone :</label>
-                    <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890">
-                </div>
-        
-                <br>
-        
-                <div>
-                    <label for="bdate">Birthdate:</label>
+                    <label for="bdate">Birthdate :</label>
                     <input type="date" id="bdate" name="bdate">
                 </div>
                 
                 <br>
-        
+                        
                 <div>
-                    <label for="title">title:</label>
+                    <label for="Gender">Gender</label>
         
-                    <label for="Mr.">Mr.</label>
-                    <input type="radio" id="Mr." name="title" value="Mr.">
+                    <label for="Mr.">Male</label>
+                    <input type="radio" id="Male" name="Gender" value="Male">
         
-                    <label for="Mrs.">Mrs.</label>
-                    <input type="radio" id="Mrs." name="title" value="Mrs.">            
+                    <label for="Mrs.">Female</label>
+                    <input type="radio" id="Female" name="Gender" value="Female">            
+                </div>
+
+                <br>
+            
+                <div>
+                    <label for="Messege">Messege :</label>
+                    <input type="email" id="Messege" name="Messege" placeholder="Text Us">
                 </div>
                 
                 <br>
+
         
                 <div style="display: flex; flex-direction: row; align-items: center;">
                     <div>
@@ -120,40 +119,22 @@
 
           
         </div>
-        <div class="tablebox">
-            
-            <table style="align-content: center; align-items: center;">
-                <tr>
-                  <th style="background-color:rgb(195, 195, 197); width: 200px;">Name</th>
-                  <th style="background-color:rgb(195, 195, 197); width: 200px;">ID</th>
-                  <th style="background-color:rgb(195, 195, 197); width: 200px;">Status</th>
-                </tr>
-                <tr>
-                  <td style="background-color:rgb(246, 246, 248)">Arthuria Pendragon</td>
-                  <td style="background-color:rgb(249, 249, 252)">Saber01</td>
-                  <td style="background-color:rgb(243, 243, 245)">Active</td>
-                </tr>
-                <tr>
-                  <td style="background-color:rgb(246, 246, 248)">Alexander</td>
-                  <td style="background-color:rgb(246, 246, 248)">Rider01</td>
-                  <td style="background-color:rgb(246, 246, 248)">Active</td>
-                </tr>
-                <tr>
-                    <td style="background-color:rgb(246, 246, 248)">Lancelot</td>
-                    <td style="background-color:rgb(249, 249, 252)">Saber02</td>
-                    <td style="background-color:rgb(243, 243, 245)">Active</td>
-                </tr>
-                <tr>
-                    <td style="background-color:rgb(246, 246, 248)">Merlin</td>
-                    <td style="background-color:rgb(246, 246, 248)">Caster01</td>
-                    <td style="background-color:rgb(246, 246, 248)">Active</td>
-                </tr>
-                <tr>
-                    <td style="background-color:rgb(246, 246, 248)">Karna</td>
-                    <td style="background-color:rgb(246, 246, 248)">Lancer01</td>
-                    <td style="background-color:rgb(246, 246, 248)">Active</td>
-                </tr>
-              </table>
+
+        <div class="resultbox">
+
+            <b>Current Time :</b>
+            <span id="current-time"></span>
+            <b>Full Name :</b>
+            <span id="full-name"></span>
+            <b>Email :</b>
+            <span id="result-email"></span>
+            <b>Birthdate :</b>
+            <span id="result-birthdate"></span>
+            <b>Gender :</b>
+            <span id="result-gender"></span>
+            <b>Messege :</b>
+            <span id="result-messege"></span>
+
         </div>
     </main>
     <footer>
