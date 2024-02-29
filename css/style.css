@@ -40,7 +40,50 @@ main {display: flex; flex: 1; align-content: center;
     padding: 100px;
 }
 
-.lingkar {border: 1px solid white; padding: 5px;}
+.wrapper {
+    width: 200vmin;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    margin-top: 100px;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 5px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+}
+.slide-img {
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+}
+/* @keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+} */
+.lingkar {border: 1px solid white; padding: 5px; margin-top: 500px;}
 .topm {color: rgb(15, 15, 15); margin: 30px; font-weight: bolder; font-size: 25px;}
 .topg {
     color: rgb(14, 13, 13); display: flex; flex-direction: row;
